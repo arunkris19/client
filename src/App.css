@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+html,body{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  height:100vh;
+  font-size: 16px;
+  color:#323232;
+  /** color spec*/
+  --primary:#163f98;
+  --primary-light:#244ea8;
+  --primary-color:#efefef;
+  --secondary:#ffa100;
+  --secondary-light:#f3b13e;
+  --secondary-color:#ffffff;
+  --accent:#cf1010;
+  --accent-color:#efefef;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+h1,h2,h3,h4,
+p,header,footer,nav,
+div,main,section{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-weight: 300;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  width:100%;
+  align-items: flex-start;
 }
-
-.App-link {
-  color: #61dafb;
+/*layout*/
+.container{ display:block; }
+.display{ display: flex;}
+.display.middle{ align-items: center; }
+.spacer-s{ padding:0.5rem; }
+.spacer-m{ padding:1rem; }
+.spacer-l{  padding:1.5rem; }
+.spacer-sx{ padding:0 0.5rem; }
+.spacer-mx{ padding:0 1rem; }
+.spacer-lx{  padding:0 1.5rem; }
+.spacer-sy{ padding:0.5rem 0; }
+.spacer-my{ padding:1rem 0; }
+.spacer-ly{  padding:1.5rem 0; }
+/*typography*/
+.text-l{ font-size: 1.5rem; }
+.medium{ font-weight: 600; }
+.bold{ font-weight: 700; }
+/*material*/
+.paper-x{  box-shadow: 2px 0 6px rgba(0,0,0,0.2); }
+.paper-rx{  box-shadow: -2px 0 6px rgba(0,0,0,0.2); }
+.paper-y{  box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+.paper-ry{  box-shadow: 0 -2px 6px rgba(0,0,0,0.2); }
+/*toolkit*/
+.toolkit{
+  min-height: 100vh;
+  background-color: var(--primary);
+  color: var(--primary-color);
+  width:30%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tool-item {
+  background-color: var(--primary-light);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.tool-item:hover{
+  opacity: 1.0;
+}
+.tool-item p {
+  max-height: 5rem;
+  overflow-y: hidden;
+}
+/*workspace*/
+.workspace{
+  min-height: 100vh;
+  background-color: #ffffff;  
+  width:70%;
 }
