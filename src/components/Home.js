@@ -11,7 +11,7 @@ function Home() {
             <p className='text-l spacer-my'>
                 Support us by sharing this platform with your friends and colleagues.
             </p>
-            <div className='spacer-my'><button className='accent'>Know more</button></div>
+            <div className='spacer-my'><button className='accent'>support@intellidtools.com</button></div>
             <img src={Web} alt="web" className='graphic-aa' />
         </div>
     )
