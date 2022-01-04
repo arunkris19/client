@@ -1,9 +1,11 @@
 import React from 'react'
 
-function WorkSpace() {
+function WorkSpace({Component}) {
     return (
-        <div className='workspace container spacer-x paper-rx'>
-            
+        <div className='workspace container'>
+            <div className='spacer-l'>
+                {Component}
+            </div>
         </div>
     )
 }
